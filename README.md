@@ -17,7 +17,6 @@
 <!-- Prerequisites --> 
 ## Prerequisites 
 
-> Please note windows machines cannot be used for running the iOS app
 
 Windows:
 
@@ -41,7 +40,7 @@ JSON Payload:
 
 - A is alphabets in a name
 - X is an numeric characters of card number
-- Z is the digits of initial balance.
+- Z is the digits of limit.
 - Intial balance will be be 0 at the begining.
 
 ###### Validations:
@@ -90,7 +89,7 @@ List of Credit Card Accounts:
 ]
 ```
 - A is unique generated public user Id
-- X is alphabets in name
+- X is alphabets in first name
 - Y is the alphabets in last name
 - Z is the digits of initial balance.
 
