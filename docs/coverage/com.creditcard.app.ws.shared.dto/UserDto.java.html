@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>UserDto.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">credit-card-app-ws</a> &gt; <a href="index.source.html" class="el_package">com.creditcard.app.ws.shared.dto</a> &gt; <span class="el_source">UserDto.java</span></div><h1>UserDto.java</h1><pre class="source lang-java linenums">package com.creditcard.app.ws.shared.dto;
+
+import java.io.Serializable;
+
+/*
+ * Model shared between  different layers of the application.
+ */
+<span class="fc" id="L8">public class UserDto implements Serializable {</span>
+
+	private static final long serialVersionUID = 5036684608772891201L;
+	private long id;
+	private String userId;
+	private String firstName;
+	private String lastName;
+	private String cardNumber;
+	private long cardLimit;
+	private long balance;
+
+	public long getId() {
+<span class="fc" id="L20">		return id;</span>
+	}
+
+	public void setId(long id) {
+<span class="fc" id="L24">		this.id = id;</span>
+<span class="fc" id="L25">	}</span>
+
+	public String getUserId() {
+<span class="fc" id="L28">		return userId;</span>
+	}
+
+	public void setUserId(String userId) {
+<span class="fc" id="L32">		this.userId = userId;</span>
+<span class="fc" id="L33">	}</span>
+
+	public String getFirstName() {
+<span class="fc" id="L36">		return firstName;</span>
+	}
+
+	public void setFirstName(String firstName) {
+<span class="fc" id="L40">		this.firstName = firstName;</span>
+<span class="fc" id="L41">	}</span>
+
+	public String getLastName() {
+<span class="fc" id="L44">		return lastName;</span>
+	}
+
+	public void setLastName(String lastName) {
+<span class="fc" id="L48">		this.lastName = lastName;</span>
+<span class="fc" id="L49">	}</span>
+
+	public String getCardNumber() {
+<span class="fc" id="L52">		return cardNumber;</span>
+	}
+
+	public void setCardNumber(String cardNumber) {
+<span class="fc" id="L56">		this.cardNumber = cardNumber;</span>
+<span class="fc" id="L57">	}</span>
+
+	public long getCardLimit() {
+<span class="fc" id="L60">		return cardLimit;</span>
+	}
+
+	public void setCardLimit(long cardLimit) {
+<span class="fc" id="L64">		this.cardLimit = cardLimit;</span>
+<span class="fc" id="L65">	}</span>
+
+	public long getBalance() {
+<span class="fc" id="L68">		return balance;</span>
+	}
+
+	public void setBalance(long balance) {
+<span class="nc" id="L72">		this.balance = balance;</span>
+<span class="nc" id="L73">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.5.201910111838</span></div></body></html>
