@@ -29,7 +29,7 @@ Windows:
 
 ## Usage 
 
-#### API: /creditcards/add This is a POST api which is used to create a new Credit Card Account. 
+### API: /creditcards/add This is a POST api which is used to create a new Credit Card Account. 
 #### Consumes
 ```yaml
 JSON Payload:
@@ -39,9 +39,18 @@ JSON Payload:
 }
 ```
 
--A is a alphame
-X is an numeric characters of card number, Z is the digits of initial balance.
-Intial balance will be be 0 at the begining.
+- A is alphabets in a name
+- X is an numeric characters of card number
+- Z is the digits of initial balance.
+- Intial balance will be be 0 at the begining.
+
+###### Validations:
+
+- Request must have name, card number and limit. If violated, Bad Request.
+- Credit Card Number can only have digits. If violated, BadRequest.
+- The minimum balance in the account is 0. It will be taken 0 by default.
+- Credit card number can have maximum 19 digits. If violated, BadRequest.
+- Credit card number will be validated against Luhn algorithm. If violated, BadRequest.
 
 #### Produces
 ```yaml
@@ -59,7 +68,7 @@ JSON:
 - With a minimum balance of 0 in the created user entry.
 
 
-#### API: /accounts/getAll
+### API: /accounts/getAll
 This is a GET api which is used to get all the Credit Card Accounts.
 #### Produces
 ```yaml
@@ -82,13 +91,6 @@ List of Credit Card Accounts:
 ```
 - A is unique generated public user Id
 - X is alphabets in name
-- Y is the alphabets in last nameZ is the digits of initial balance.
+- Y is the alphabets in last name
+- Z is the digits of initial balance.
 
-
-###### Validations:
-
-Request must have name, card number and limit. If violated, Bad Request.
-Credit Card Number can only have digits. If violated, BadRequest.
-The minimum balance in the account is 0. It will be taken 0 by default.
-Credit card number can have maximum 19 digits. If violated, BadRequest.
-Credit card number will be validated against Luhn algorithm. If violated, BadRequest.
