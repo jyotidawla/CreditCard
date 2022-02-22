@@ -59,11 +59,11 @@ JSON:
 - With a minimum balance of 0 in the created user entry.
 
 
-```
-```yaml
-API: /accounts/getAll
+#### API: /accounts/getAll
 This is a GET api which is used to get all the Credit Card Accounts.
-Produces: JSON
+#### Produces
+```yaml
+JSON:
 List of Credit Card Accounts:
 [
 {
@@ -79,8 +79,11 @@ List of Credit Card Accounts:
 "balance": ZZZZZZ
 }
 ]
-where A is unique generated public user Id, X is alphabets in name, Y is the alphabets in last name, Z is the digits of initial balance.
 ```
+- A is unique generated public user Id
+- X is alphabets in name
+- Y is the alphabets in last nameZ is the digits of initial balance.
+
 
 ###### Validations:
 
